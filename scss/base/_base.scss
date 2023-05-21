@@ -1,11 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&family=Poiret+One&family=Source+Serif+Pro:wght@300&display=swap');
-
-/*
-font-family: 'Fira Sans', sans-serif;  logo
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat+Alternates&family=Poiret+One&display=swap');
+/*font-family: 'Comfortaa', cursive;  logo
 font-family: 'Poiret One', cursive;  unical text
-font-family: 'Source Serif Pro', serif;  simple text
+font-family: 'Montserrat Alternates', sans-serif;  simple text
 */
-
 body{
-    font-family: 'Source Serif Pro', serif;
+    font-family: $font-main;
+    font-size: 15px;
+    background: black;
+}
+.container{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.subtitle{
+    font-family: $font-accent;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 25px;
 }
