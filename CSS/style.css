@@ -85,6 +85,9 @@ font-family: 'Montserrat Alternates', sans-serif;  simple text
 body {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 15px;
+}
+
+header {
   background: black;
 }
 
@@ -94,13 +97,30 @@ body {
   margin: 0 auto;
 }
 
-.subtitle {
-  font-family: "Poiret One", cursive;
-  font-size: 24px;
+.section {
+  padding: 80px 0;
+}
+.section__header {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.section__title {
+  font-size: 30px;
   line-height: 1.2;
-  font-weight: 400;
-  color: #333333;
-  margin-bottom: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #696969;
+}
+.section__title:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #696969;
+  margin: 45px auto 0;
+  margin-bottom: 45px;
 }
 
 .header {
@@ -110,6 +130,7 @@ body {
   left: 0;
   right: 0;
   z-index: 100;
+  background: #000000;
 }
 .header__inner {
   display: flex;
@@ -164,7 +185,8 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  background: black;
   background-size: cover;
 }
 .intro__title {
@@ -216,7 +238,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  padding-left: 80px;
+  padding-left: 50px;
 }
 .about__text {
   font-family: Cardo;
@@ -228,28 +250,54 @@ body {
   margin-bottom: 35px;
 }
 
-.features {
+.whyus {
   display: flex;
-  margin: 120px 0 120px 0;
-  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 50px 0;
 }
-.features__item {
-  margin: 25px 0;
-  width: 33.33333%;
-  text-align: center;
-  padding: 0 40px;
+.whyus:last-child {
+  border: none;
 }
-.features__title {
-  margin: 30px 0 20px 0;
+.whyus__item {
+  flex: 1 1 0;
+  padding-left: 90px;
+  padding-right: 20px;
+  position: relative;
+}
+.whyus__img {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  z-index: 1;
+}
+.whyus__title {
   font-size: 14px;
   line-height: 1.2;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #2d3033;
-}
-.features__text {
-  font-size: 14px;
-  line-height: 21px;
   font-weight: 400;
-  color: #6c7279;
+  text-transform: uppercase;
+  color: #696969;
+  margin-bottom: 10px;
+}
+.whyus__text {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.section__whyus {
+  background: #000;
+}
+
+.masters {
+  background: white;
+  display: flex;
+}
+.masters__item {
+  flex: 1 1 0;
+  height: 100px;
+}
+.masters__descriptrion {
+  color: #000;
 }

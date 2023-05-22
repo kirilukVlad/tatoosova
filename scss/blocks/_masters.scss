@@ -1,0 +1,14 @@
+.masters{
+    background: #ffff;
+    display: flex;
+    &__item{
+		flex: 1 1 0;
+        height: 100px;
+	}
+    &__descriptrion{
+        color: #000;
+    }
+    &__photo{
+        
+    }
+}
