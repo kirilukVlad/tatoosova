@@ -3,9 +3,13 @@
 font-family: 'Poiret One', cursive;  unical text
 font-family: 'Montserrat Alternates', sans-serif;  simple text
 */
+html{
+	scroll-behavior: smooth;
+}
 body{
     font-family: $font-main;
     font-size: 15px;
+	
 }
 header{
 	background: black;
@@ -17,7 +21,7 @@ header{
 }
 
 .section {
-	padding: 80px 0;
+	padding-top: 120px;
 	&__header {
 		width: 100%;
 		max-width: 950px;

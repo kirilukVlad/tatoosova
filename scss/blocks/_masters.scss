@@ -1,12 +1,12 @@
 .masters{
     background: #ffff;
     display: flex;
+    justify-content: space-between;
     &__item{
-		flex: 1 1 0;
-        height: 100px;
+        position: relative;
+        margin: 20px;
 	}
     &__descriptrion{
-        color: #000;
     }
     &__photo{
         
