@@ -1,0 +1,21 @@
+.section__contacts{
+    margin-top: 150px;
+    background-color: #000;
+    color: #e6e3e3;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    &__item{
+        position: relative;
+        margin: 20px;
+        
+    }
+    &__title{
+        font-size: 20px;
+    }
+    & a{
+        color: #e6e3e3;
+    }
+}

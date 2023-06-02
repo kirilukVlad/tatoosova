@@ -417,3 +417,24 @@ header {
   width: 800px;
   height: 100px;
 }
+
+.section__contacts {
+  margin-top: 150px;
+  background-color: #000;
+  color: #e6e3e3;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__item {
+  position: relative;
+  margin: 20px;
+}
+.contacts__title {
+  font-size: 20px;
+}
+.contacts a {
+  color: #e6e3e3;
+}
