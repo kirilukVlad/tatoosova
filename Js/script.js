@@ -28,10 +28,13 @@ btnRight.addEventListener("click", function () {
   }
 });
 // Объявляем событие нажатия на кнопку назад
-btnLeft.addEventListener("click", function () {
-  i--;
+
+btnRight.addEventListener("click", function () {
+  // Увеличиваем переменную i
+  ++i;
+  // Условие если переменная i больше или равна количеству слайдов
   if (i <= slides.length) {
-    // Добавляем класс block предыдущему слайду
+    // Удаляем класс block предыдущему слайду
     slides[i + 1].classList.remove("block");
     // Присваиваем переменной i ноль
     i = 0;
@@ -39,7 +42,7 @@ btnLeft.addEventListener("click", function () {
     slides[i].classList.add("block");
   } else {
     // Иначе
-    // Добавняем класс block предыдущему слайду
+    // Удаляем класс block предыдущему слайду
     slides[i + 1].classList.remove("block");
     // Добавляем класс block следующему слайду
     slides[i].classList.add("block");
