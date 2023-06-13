@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat+Alternates&family=Poiret+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&family=Poiret+One&family=Source+Serif+Pro:wght@300&display=swap");
 * {
@@ -127,8 +128,19 @@ header {
   margin-bottom: 45px;
 }
 
+body::-webkit-scrollbar {
+  width: 9px;
+}
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* цвет бегунка */
+  border-radius: 20px; /* округлось бегунка */
+  border: 2px solid rgb(255, 255, 255); /* отступ вокруг бегунка */
+}
+
 .header {
-  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -239,6 +251,7 @@ header {
   position: relative;
 }
 .about__photo {
+  width: 100%;
   position: absolute;
   top: 50%;
   right: 0;
@@ -253,13 +266,13 @@ header {
   padding-left: 50px;
 }
 .about__text {
-  font-family: Cardo;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 36px;
   line-height: 42px;
   font-weight: 400;
-  font-style: italic;
   color: black;
   margin-bottom: 35px;
+  padding: 0 15px;
 }
 
 .whyus {
@@ -432,7 +445,7 @@ header {
 }
 
 .section__contacts {
-  margin-top: 150px;
+  margin-top: 10px;
   color: #000000;
 }
 
@@ -442,13 +455,16 @@ header {
 }
 .contacts__item {
   position: relative;
-  margin: 20px;
+  margin: 40px;
 }
 .contacts__title {
   font-size: 20px;
 }
 .contacts a {
   color: #000000;
+}
+.contacts a:hover {
+  color: #8b8b8b;
 }
 
 .section__how-to-care {
@@ -478,6 +494,54 @@ header {
 }
 
 .section__footer {
+  height: 150px;
   background-color: black;
   width: 100%;
+  color: white;
+  padding-top: 25px !important;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__link img {
+  height: 28px;
+  margin-left: 7px;
+  transition: color 0.2s linear;
+}
+.footer__link img:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.footer__link img:hover:after {
+  display: block;
+  opacity: 1;
+}
+.footer__link img:hover:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 100%;
+  display: none;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.4s linear;
+}
+.footer__link img__text {
+  padding-top: 5px;
+}
+.footer__info {
+  text-align: center !important;
+  margin-top: 65px;
+  padding-bottom: 15px;
+  color: white;
+}
+.footer__info a {
+  color: white;
+}
+.footer__info a:hover {
+  color: #8b8b8b;
+  border-bottom: 1px solid #8b8b8b;
 }

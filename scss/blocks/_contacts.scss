@@ -1,20 +1,22 @@
-.section__contacts{
-    margin-top: 150px;
-    color: #000000;
+.section__contacts {
+  margin-top: 10px;
+  color: #000000;
 }
 
-.contacts{
-    display: flex;
-    justify-content: space-between;
-    &__item{
-        position: relative;
-        margin: 20px;
-        
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+    margin: 40px;
+  }
+  &__title {
+    font-size: 20px;
+  }
+  & a {
+    color: #000000;
+    &:hover {
+      color: #8b8b8b;
     }
-    &__title{
-        font-size: 20px;
-    }
-    & a{
-        color: #000000;
-    }
+  }
 }

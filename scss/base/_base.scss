@@ -3,46 +3,55 @@
 font-family: 'Poiret One', cursive;  unical text
 font-family: 'Montserrat Alternates', sans-serif;  simple text
 */
-html{
-	scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: $font-main;
-    font-size: 15px;
-	
+body {
+  font-family: $font-main;
+  font-size: 15px;
 }
-header{
-	background: black;
+header {
+  background: black;
 }
-.container{
-	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .section {
-	padding-top: 120px;
-	&__header {
-		width: 100%;
-		max-width: 950px;
-		margin:0 auto 50px;
-		text-align: center;
-	}
-	&__title {
-		font-size: 30px;
-		line-height: 1.2;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: #696969;
-		&:after{
-			content: "";
-			display: block;
-			width: 60px;
-			height: 3px;
-			background-color: #696969;
-			margin: 45px auto 0;
-			margin-bottom: 45px;
-		}
-	}
+  padding-top: 120px;
+  &__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #696969;
+    &:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #696969;
+      margin: 45px auto 0;
+      margin-bottom: 45px;
+    }
+  }
 }
-
+body::-webkit-scrollbar {
+  width: 9px;
+  &-track {
+    background: black;
+  }
+  &-thumb {
+    background-color: rgb(0, 0, 0); /* цвет бегунка */
+    border-radius: 20px; /* округлось бегунка */
+    border: 2px solid rgb(255, 255, 255); /* отступ вокруг бегунка */
+  }
+}

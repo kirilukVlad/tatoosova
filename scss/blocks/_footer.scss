@@ -1,5 +1,56 @@
-.section__footer{
-    background-color: black;
-    width: 100%;
-    
+.section__footer {
+  height: 150px;
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding-top: 25px !important;
+}
+
+.footer {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link img {
+    height: 28px;
+    margin-left: 7px;
+    transition: color 0.2s linear;
+    &:hover{
+      background-color: rgb(255, 255, 255);
+      color: rgb(255, 255, 255);
+      &:after{
+          display: block;
+          opacity: 1;
+      }
+      &:after{
+        content: "";
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        top: 100%;
+        display: none;
+        left: 0;
+        z-index: 1;
+        transition: opacity 0.4s linear;
+    }
+  }
+  &__text {
+    padding-top: 5px;;
+  }
+  }
+  &__info {
+    text-align: center !important;
+    margin-top: 65px;
+
+    padding-bottom: 15px;
+    color: white;
+    & a {
+      color: white;
+      &:hover {
+        color: #8b8b8b;
+        border-bottom: 1px solid #8b8b8b;
+      }
+    }
+  }
+ 
 }
