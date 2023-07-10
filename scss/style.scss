@@ -1,14 +1,16 @@
-@import "./base/null_style"; //файл обнуление 
-@import "./base/vars";
-@import "./base/base";
-@import "./blocks/header";
-@import "./blocks/intro";
-@import "./blocks/about";
-@import "./blocks/why_us";
-@import "./blocks/masters";
-@import "./blocks/portfolio";
-@import "./blocks/questions";
-@import "./blocks/contacts";
-@import "./blocks/how-to-care";
-@import "./blocks/footer";
-
+@import './base/null_style'; //файл обнуление
+@import './base/vars';
+@import './base/base';
+@import './blocks/header';
+@import './blocks/intro';
+@import './blocks/about';
+@import './blocks/why_us';
+@import './blocks/masters';
+@import './blocks/portfolio';
+@import './blocks/questions';
+@import './blocks/contacts';
+@import './blocks/how-to-care';
+@import './blocks/footer';
+@import './base/media-1030';
+@import './base/media-730';
+@import './base/media-430';

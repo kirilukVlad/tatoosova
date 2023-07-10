@@ -1,0 +1,50 @@
+
+@media (max-width: 1030px) {
+  .header__inner .about {
+    margin: 15px 0;
+  }
+  .about__item {
+    flex-direction: column;
+  }
+  .about__img {
+    width: 1000px;
+  }
+  .about__content {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .about__text {
+    font-size: 24px;
+  }
+  .portfolio__item {
+    width: 33%;
+  }
+  .whyus__text {
+    font-size: 20px;
+  }
+  .footer__inner {
+    justify-content: space-around;
+    line-height: 20px;
+  }
+  .questions__answer {
+    padding: 0 15px;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .questions__question {
+    margin-left: 15px;
+    font-size: 28px;
+    padding: 0 15px;
+  }
+  .how-to-care__item{
+    display: block;
+  }
+  .whyus{
+    margin: 0 25px;
+  }
+  .contacts__item{
+    margin: 0 25px;
+  }
+}
+
+

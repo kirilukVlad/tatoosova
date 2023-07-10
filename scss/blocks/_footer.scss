@@ -1,12 +1,14 @@
 .section__footer {
+  position: absolute;
   height: 150px;
   background-color: black;
-  width: 100%;
+  width: 100% !important;
   color: white;
   padding-top: 25px !important;
 }
 
 .footer {
+  width: 4;
   &__inner {
     display: flex;
     justify-content: space-between;

@@ -1,6 +1,8 @@
 .about {
+    margin: 10px 0;
     overflow: hidden;
     background-color: white;
+
     &__item {
         display: flex;
         flex-wrap: wrap;
@@ -15,6 +17,7 @@
     &__photo{
         width: 100%;
         position: absolute;
+        border-radius: 15%;
         top: 50%;
         right:0;
         z-index: 1;

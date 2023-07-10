@@ -4,11 +4,13 @@
 }
 
 .contacts {
+  margin-bottom: 130px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   &__item {
+    margin: 0 20px 15px 0 ;
     position: relative;
-    margin: 40px;
   }
   &__title {
     font-size: 20px;
