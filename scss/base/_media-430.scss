@@ -1,14 +1,22 @@
 @media (max-width: 430px) {
-    body {
-      width: 400px;
-      justify-content: center;
-    }
-    .container {
-      width: 400px;
-      max-width: 100%;
-      margin: 0 auto;
-    }
-    .how-to-care__img {
-      height: 25%;
-    }
+  body {
+    width: 400px;
+    justify-content: center;
   }
+  .container {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .how-to-care__main {
+    flex-direction: column !important;
+  }
+  .how-to-care__item {
+    width: 100% !important;
+  }
+}
+@media(min-width:1030px){
+  .how-to-care__item{
+    max-width: 50%;
+  }
+}

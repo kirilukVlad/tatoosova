@@ -704,7 +704,7 @@ header {
 .how-to-care__main {
   color: rgb(255, 255, 255) !important;
   font-family: "Myriad Pro" !important;
-  font-size: 38.4px;
+  font-size: 32.4px;
   line-height: 1.2;
   font-weight: 400;
   font-style: italic;
@@ -715,12 +715,17 @@ header {
   list-style-type: none;
 }
 .how-to-care__item {
+  max-width: 100%;
   align-items: center;
-  padding: 15px 25px;
+  padding: 15px 45px;
+}
+.how-to-care__item p {
+  text-align: start;
+  padding-left: 25px;
 }
 .how-to-care__title {
   font-family: "beer-money";
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.2;
   font-weight: 400;
   font-style: italic;
@@ -751,7 +756,7 @@ header {
 }
 .how-to-care__list-title {
   font-family: "beer-money";
-  font-size: 70px;
+  font-size: 50px;
   line-height: 1.2;
   font-weight: 400;
   font-style: italic;
@@ -768,7 +773,7 @@ header {
   align-items: center;
 }
 .how-to-care__footer-item {
-  padding: 0 25px;
+  padding: 0 13px;
 }
 .how-to-care__footer-download img {
   height: 30px;
@@ -780,6 +785,9 @@ header {
 .how-to-care__footer-logo img {
   height: 128px;
   opacity: 0.25;
+}
+.how-to-care__d-flex {
+  display: flex;
 }
 
 .section__footer {
@@ -843,9 +851,6 @@ header {
   .header__inner .about {
     margin: 15px 0;
   }
-  .about__item {
-    flex-direction: column;
-  }
   .about__img {
     width: 1000px;
   }
@@ -876,14 +881,14 @@ header {
     font-size: 28px;
     padding: 0 15px;
   }
-  .how-to-care__item {
-    display: block;
-  }
   .whyus {
     margin: 0 25px;
   }
   .contacts__item {
     margin: 0 25px;
+  }
+  .how-to-care__main {
+    flex-direction: column;
   }
 }
 @media (max-width: 730px) {
@@ -913,7 +918,15 @@ header {
     max-width: 100%;
     margin: 0 auto;
   }
-  .how-to-care__img {
-    height: 25%;
+  .how-to-care__main {
+    flex-direction: column !important;
+  }
+  .how-to-care__item {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1030px) {
+  .how-to-care__item {
+    max-width: 50%;
   }
 }
