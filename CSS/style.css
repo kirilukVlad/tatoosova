@@ -92,6 +92,17 @@ font-family: 'Montserrat Alternates', sans-serif;  simple text
 font-family: 'Poiret One', cursive;  unical text
 font-family: 'Montserrat Alternates', sans-serif;  simple text
 */
+@font-face {
+  font-family: "beer-money";
+  src: url("/./fonts/beer-money.ttf.woff") format("woff"), url("/./fonts/beer-money.ttf.svg") format("svg"), url("/./fonts/beer-money.ttf.eot"), url("/./fonts/beer-money.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(/./fonts/MYRIADPRO-REGULAR.OTF) format("ttf");
+  font-weight: 400;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -289,6 +300,16 @@ header {
   display: flex;
   border-bottom: 1px solid #e5e5e5;
   padding: 50px 0;
+  opacity: 0;
+  animation: ani 2.5s forwards;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .whyus:last-child {
   border: none;
@@ -680,26 +701,85 @@ header {
   background-color: #000;
 }
 
-.how-to-care {
+.how-to-care__main {
+  color: rgb(255, 255, 255) !important;
+  font-family: "Myriad Pro" !important;
+  font-size: 38.4px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.05em;
+  color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 700px;
-  min-height: 400px;
+  text-align: center;
+  list-style-type: none;
 }
 .how-to-care__item {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+  align-items: center;
+  padding: 15px 25px;
 }
-.how-to-care__img {
-  position: absolute;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  z-index: 0;
-  transform: translate3d(-50%, -50%, 0px);
+.how-to-care__title {
+  font-family: "beer-money";
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.how-to-care__paragraph {
+  text-align: left;
+}
+.how-to-care__questions {
+  display: flex;
+  padding: 15px 0;
+  text-align: start;
+}
+.how-to-care__questions-item {
+  padding: 0 15px;
+}
+.how-to-care__questions-question {
+  font-family: "beer-money";
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.how-to-care__list-title {
+  font-family: "beer-money";
+  font-size: 70px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.how-to-care__list-ul {
+  text-align: left;
+}
+.how-to-care__footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.how-to-care__footer-item {
+  padding: 0 25px;
+}
+.how-to-care__footer-download img {
+  height: 30px;
+}
+.how-to-care__footer-text {
+  padding: 0 50px;
+  font-size: 22px;
+}
+.how-to-care__footer-logo img {
+  height: 128px;
+  opacity: 0.25;
 }
 
 .section__footer {

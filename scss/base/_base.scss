@@ -3,6 +3,22 @@
 font-family: 'Poiret One', cursive;  unical text
 font-family: 'Montserrat Alternates', sans-serif;  simple text
 */
+
+@font-face {
+  font-family: 'beer-money';
+  src: url('/./fonts/beer-money.ttf.woff') format('woff'),
+    url('/./fonts/beer-money.ttf.svg') format('svg'),
+    url('/./fonts/beer-money.ttf.eot'),
+    url('/./fonts/beer-money.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(/./fonts/MYRIADPRO-REGULAR.OTF) format('ttf');
+  font-weight: 400;
+}
+
 html {
   scroll-behavior: smooth;
 }
